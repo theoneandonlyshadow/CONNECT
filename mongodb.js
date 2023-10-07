@@ -4,10 +4,10 @@ mongoose.set('strictQuery', true);
 
 mongoose.connect("<CONNECTION STRING>")
 .then(()=>{
-    console.log('mongoose connected');
+    console.log('Connection to Mongoose established');
 })
 .catch((e)=>{
-    console.log('failed');
+    console.log('Connection to Mongoose failed');
 })
 
 const logInSchema=new mongoose.Schema({
