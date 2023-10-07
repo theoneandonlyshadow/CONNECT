@@ -2,7 +2,7 @@ const mongoose=require("mongoose")
 mongoose.set('strictQuery', false);
 mongoose.set('strictQuery', true);
 
-mongoose.connect("mongodb+srv://madhavnair700:devatheking7@tccp.qf9cdhm.mongodb.net/")
+mongoose.connect("<CONNECTION STRING>")
 .then(()=>{
     console.log('mongoose connected');
 })
