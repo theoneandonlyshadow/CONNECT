@@ -24,10 +24,10 @@
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8" /> -->
 </p>
 
-Status
-
  <h4 align="center"> 
 	🚧  CONNECT is under construction  🚧
+	     some features may not work  
+
 </h4> 
 
 <hr>
