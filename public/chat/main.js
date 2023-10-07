@@ -183,7 +183,8 @@ fileInput.addEventListener('change', (e) => {
   }
 });
 
-// Message submit including file attachment
+// FILE UPLOAD FEATURE (START)
+// --------- WARNING: FEATURE ADDED BUT NOT OPTIMIZED --------- \\
 chatForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -254,3 +255,4 @@ function outputMessage(message) {
 
   document.querySelector('.chat-messages').appendChild(div);
 }
+// FILE UPLOAD FEATURE (END)
