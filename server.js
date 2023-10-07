@@ -9,8 +9,6 @@ const mongoose = require('mongoose');
 const bcrypt = require("bcrypt"); // For password hashing
 const LogInCollection = require("./mongodb");
 
-
-
 const {
   userJoin,
   getCurrentUser,
@@ -18,7 +16,6 @@ const {
   getRoomUsers
 } = require('./utils/users');
 
-//..
 
 const express = require('express');
 const app = express();
@@ -30,7 +27,7 @@ const io = socketio(server);
 
 server.listen(port, () => {
   try {
-    console.log('\x1b[36m%s\x1b[0m', `Middleware connected to port :: ${port}`);
+    console.log('\x1b[36m%s\x1b[0m', `Server connected to port :: ${port}`);
   } catch (error) {
     console.error(error);
   }
@@ -44,15 +41,12 @@ const fs = require('fs');
 // Define the path to the folder containing your JavaScript files
 const scriptsFolder = path.join(__dirname, 'public/registration/'); // Corrected path to 'scripts'
 
-
-// Read the files in the folder
+// simple file error handler
 fs.readdir(scriptsFolder, (err, files) => {
   if (err) {
     console.error('Error reading scripts folder:', err);
     return;
   }
-
-  // Loop through the files and require them
   files.forEach((file) => {
     if (file == 'handler.js') {
       const scriptPath = path.join(scriptsFolder, file);
@@ -97,11 +91,11 @@ app.set('views', templatePath);
 app.use(express.static(publicPath));
 
 app.get('/signup', (req, res) => {
-  res.render('signup'); // Remove the leading slash and ".hbs" extension
+  res.render('signup');
 });
 
 app.get('/login', (req, res) => {
-  res.render('login'); // Remove the leading slash and ".hbs" extension
+  res.render('login');
 });
 
 app.get('/chat', (req, res) => {
@@ -170,13 +164,9 @@ app.post('/login', async (req, res) => {
   }
 });
 
+// mpngo stuff END----
 
-
-
-
-// mpngo stuff ----
-
-// INIT
+// INIT SOCKET.IO
 
 const botName = 'Automated';
 
@@ -262,12 +252,14 @@ console.log('USER: ', user.username, ip, socket.id,' - disconnected')
   });
 });
 
+// PROMAN - Project Management
 app.use(express.json());
 app.all(/api/, function(req, res, next){
   console.log(`\n${req.method} ${req.url} --> ${JSON.stringify(req.body, '\t', 2)}`);
   res.status(200).end();
 })
 
+// ERROR HANDLERS
 process.on('uncaughtException', function(err) {
   console.log('Caught exception: ' + err);
 });
@@ -300,8 +292,3 @@ function handle(signal) {
 
 process.on('SIGINT', handle);
 process.on('SIGTERM', handle);
-
-
-// trello
-
-
