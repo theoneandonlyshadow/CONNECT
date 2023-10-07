@@ -25,8 +25,7 @@
 </p>
 
  <h4 align="center"> 
-	🚧  CONNECT is under construction  🚧
-	     some features may not work  
+	🚧  CONNECT is under construction and some features may not work   🚧
 
 </h4> 
 
