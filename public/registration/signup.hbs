@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup - CONNECT!</title>
+  <link rel="stylesheet" href="./login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	
+  <div class="main">
+    
+    <div class="container a-container" id="a-container">
+		
+      <form class="form" id="a-form" action="/signup" method="post" >
+        <h2 class="form_title title">Create CONNECT Account</h2>
+        <span class="form__span">Username and Password must be entered.</span>
+        <div id="error-nwl"></div>
+		  
+        <input class="form__input" type="text" name = "name" placeholder="name" required/>
+        <div id="error-nwl"></div>
+        <input class="form__input" placeholder="Password" name="password" type="password" required/>
+        <div id="error-nwl"></div>
+        <div id="error-nomat"></div>
+        <button class="form__button button submit" type="submit">SIGN UP</button>
+        <div class="notifications"></div>
+      </form>
+    </div>
+    
+    <div class="switch" id="switch-cnt">
+      <div class="switch__circle"></div>
+      <div class="switch__circle switch__circle--t"></div>
+      <div class="switch__container" id="switch-c1">
+        <h2 class="switch__title title">Welcome Back!</h2>
+        <p class="switch__description description">Already a user? Login here!</p>
+        <a href="/login"  class="switch__button button switch-btn">LOG IN</a>
+      </div>
+      
+
+      </div>
+    </div>
+  </div>
+  <script src="./handler.js"></script>
+</body>
+</html>

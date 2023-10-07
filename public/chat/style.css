@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+	--dark-color-a: #141414;
+	--dark-color-b: #242424;
+	--light-color: #242424;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+	background-color: #242424;	
+	overflow: hidden;  /* scroll bar */
+	/*background-image: url("https://res.cloudinary.com/dfiultfjp/image/upload/v1689020325/Frame_48_rbl8wo.jpg");*/
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	
+}
+
+ul {
+	list-style: none;
+	color: #fff;
+}
+
+#room-name{
+	margin-left: 425px;
+}
+
+.header-stuff{
+	color: #fff;
+}
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	border: 0;
+	font-size: 17px;
+	color: #fff;
+	text-align: right;
+	margin-right: 100px;
+	position: absolute;
+	right: 0;
+}
+
+.fileInput {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	border: 0;
+	font-size: 17px;
+	color: #fff;
+	text-align: right;
+	margin-right: 1000px;
+	position: absolute;
+	right: 0;
+}
+
+
+
+.inte-btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	border: 0;
+	font-size: 17px;
+	color: #fff;
+	text-align: right;
+	margin-right: 100px;
+	position: absolute;
+	right: 0;
+}
+
+
+.proman{
+
+	width: 60px; /* Adjust to your desired width */
+	height: 32px; /* Replace 'background.jpg' with the actual path to your image */
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	border: 0;
+	font-size: 17px;
+	color: #fff;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	margin-right: 30px;
+
+}
+
+/* Chat Page */
+
+.chat-container {
+	background: #ffffff;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/* future shit */
+.container {
+    position: relative;
+	margin: 0px;
+	height: 650px;
+	width: 500px;
+	overflow-y: scroll;
+	/*max-width: 1500px;*/ 
+    background-color: #000000; 
+	z-index: 1;
+	/*margin-left: 150px;*/
+}
+
+
+.chat-header {
+	background: var(--dark-color-a);
+	color: #000000;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-main {
+	display: grid;
+	color: #ffffff;
+	grid-template-columns: 1fr 3fr;
+}
+
+/*.chat-sidebar {
+	background: var(--dark-color-b);
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+	height: 800px;
+}
+*/
+.chat-sidebar h2 {
+	font-size: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+	margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+}
+
+.chat-messages {
+	padding: 30px;
+	overflow-y: scroll;
+	margin-left: -45px;
+	height: 650px;
+	color: #fff;
+}
+
+/* inside chat container */
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	margin-top: 50px;
+	margin-left: 70px;
+	overflow-wrap: break-word;
+	color: #fff;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--light-color-b);
+	opacity: 0.7;
+	
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+	
+}
+
+.chat-form-container {
+	padding: 20px 30px;
+	color: #fff;
+	
+	background-color: var(--dark-color-a);
+}
+
+/* type bar */
+.chat-form-container form {
+	display: flex;
+	margin-right: -27px;
+	color: #000;
+	margin-left: 400px;
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+	color: #000;
+
+}
+
+/* search bar */
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60px;
+    background: #353535;
+    line-height:40px;
+    padding: 10px;
+    border-radius: 15px;
+	margin-left: 425px;
+}
+.search-input{
+    background: #353535;
+    color: #fff;
+    outline: none;
+    border: none;
+    line-height:40px;
+    width: 0px;
+    float: left;
+    font-size:14px;
+    transition: 0.7s ease;
+    font-family:sans-serif;
+}
+.search-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+    background: #353535;
+    padding: 12px;
+    border-radius: 50%;
+    float: right;
+    color: #ffffff;
+    transition: 0.4s ease;
+}
+.search-box:hover > .search-input{
+    width: 240px;
+    margin: 0px 8px;
+}
+.search-input:focus{
+    width: 240px;
+    margin: 0px 8px;
+}
+.search-box:hover > .search-btn{
+    background: #353535;
+}
+.search-input:focus + .search-btn{
+    background: #242424;
+}
+
+/* drop down */
+.dropdown {
+	position: relative;
+	margin-left: 0px;
+	margin-right: 150px;
+	z-index: 9999;
+  }
+  
+  .dropdown * {
+	box-sizing: border-box;
+  }
+  
+  .select {
+	background: #2a2f3b;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px #2a2f3b solid;
+	border-radius: 0.5em;
+	padding: 1em;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  
+  .select-clicked {
+	border: 2px #26489a solid;
+	box-shadow: 0 0 0.8em #26489a;
+  }
+  
+  .select:hover {
+	background: #323741;
+  }
+  
+  .caret {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 6px solid #fff;
+	transition: 0.3s;
+  }
+  
+  
+  .caret-rotate {
+	transform: rotate(180deg);
+  }
+  
+  .menu {
+	list-style: none;
+	padding: 0.2em 0.5em;
+	background: #323741;
+	border: 1px #363a43 solid;
+	box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+	border-radius: 0.5em;
+	color: #9fa5b5;
+	position: absolute;
+	top: 3em;
+	left: 50%;
+	width: 100%;
+	transform: translateX(-50%);
+	opacity: 0;
+	display: none;
+	transition: 0.2s;
+	z-index: 1;
+  }
+  
+  .menu li {
+	padding: 0.7em 0.5em;
+	margin: 0.3em 0;
+	border-radius: 0.5em;
+	cursor: pointer;
+  }
+  
+  .menu li:hover {
+	background: #2a2d35;
+  }
+  
+  
+  .active {
+	background: #23242a;
+  }
+  
+  
+  .menu-open {
+	display: block;
+	opacity: 1;
+  }
+  
+  

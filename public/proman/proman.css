@@ -1,0 +1,98 @@
+/* Reset some default browser styles */
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the body */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the main content area */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style the task creation container */
+.container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the input fields and button */
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style the task list */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style completed tasks */
+.task.completed {
+    text-decoration: line-through;
+    background-color: #f7f7f7;
+}
+
+/* Style priority levels */
+.priority.low {
+    color: green;
+}
+
+.priority.medium {
+    color: orange;
+}
+
+.priority.high {
+    color: red;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CONNECT!</title>
+  </head>
+  <body>
+    
+    <div class="chat-container">
+      <header class="chat-header">
+        <div class="proman"></div>
+        <button id="proman" class="proman">PRO</button>
+        <h2 id="room-name" class="header-stuff"></h2>
+        <div class="search-box">
+          <input type="text" placeholder="Search anything"  class="search-input">
+            <a href="#" class="search-btn">
+              <i id="search-btn" class="fas fa-search"></i>
+            </a>
+        </div>
+        
+      </header>
+      <main class="chat-main">
+        <div class="chat-sidebar">
+          <div class="container">
+
+
+            <div class="dropdown">
+              <div class="select">
+                <span class="selected">Friends</span>
+                <div class="caret"></div>
+              </div>
+              <select class="menu">
+                <option value="option1">loading friend</option>
+                <option value="option2">loading friend</option>
+                <option value="option3">loading friend</option>
+              </select>
+            </div>
+
+
+        </div>
+        </div>
+        <div class="chat-messages"></div>
+      </main>
+      <div id="searchResults"></div>
+      
+      <div class="chat-form-container">
+        <form id="chat-form">
+          <input
+            id="msg"
+            type="text"
+            placeholder="Enter Message"
+            required
+            autocomplete="off"
+          />
+          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+          <input
+  id="fileInput"
+  type="file"
+  accept=".pdf, .doc, .docx, .txt, .jpg, .png, .gif, .pptx, ,jpeg, .exe"
+  style="display: none;"
+/>
+<label for="fileInput" class="leave-btn">
+  <i class="fas fa-paperclip"></i>
+</label>
+<span id="fileName"></span>
+        </form>
+        
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
