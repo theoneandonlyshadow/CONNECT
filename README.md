@@ -3,19 +3,19 @@
 
   &#xa0;
 
-  <a href="https://[techcorp.netlify.app](https://connect-one-lime.vercel.app/signup)">Demo</a>
+  <a href="https://connect.madhavnair-projects.repl.co">Demo</a>
 </div>
 
-<h1 align="center">Techcorp</h1>
+<h1 align="center">CONNECT!</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/theoneandonlyshadow/connect?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/theoneandonlyshadow/connect?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/theoneandonlyshadow/connect?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/theoneandonlyshadow/connect?color=56BEB8">
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8" /> -->
 
@@ -24,13 +24,13 @@
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8" /> -->
 </p>
 
-<!-- Status -->
+Status
 
-<!-- <h4 align="center"> 
-	🚧  Techcorp 🚀 Under construction...  🚧
+ <h4 align="center"> 
+	🚧  CONNECT is under construction  🚧
 </h4> 
 
-<hr> -->
+<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -39,51 +39,49 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+  <a href="https://github.com/theoneandonlyshadow" target="_blank">Author</a>
 </p>
 
 <br>
 
 ## :dart: About ##
 
-Describe your project
+Ateam collaboration and communication platform that involves a combination of real-time features, user management, security, and integration with third-party tools. User rich experience, design, seamless and efficient collaboration environment for teams.
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Secure\
+:heavy_check_mark: Fast\
+:heavy_check_mark: Responsive
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
+- [Mongo](https://www.mongodb.com/try/download/community)
 - [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [VS Code](https://code.visualstudio.com/download)
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [Node](https://nodejs.org/en/) and - [VS Code](https://code.visualstudio.com/download) installed.
 
 ## :checkered_flag: Starting ##
 
 ```bash
 # Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/techcorp
+$ git clone https://github.com/theoneandonlyshadow/connect
 
 # Access
-$ cd techcorp
+$ cd connect
 
 # Install dependencies
-$ yarn
+$ npm i
 
-# Run the project
-$ yarn start
+# Run the project [ INSTALL NODEMON BEFORE ]
+$ nodemon server
 
-# The server will initialize in the <http://localhost:3000>
+# The server will initialize in the http://localhost:8040
 ```
 
 ## :memo: License ##
@@ -91,7 +89,7 @@ $ yarn start
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+Made with 3AM efforts by <a href="https://github.com/theoneandonlyshadow" target="_blank">Madhav Nair</a>
 
 &#xa0;
 
