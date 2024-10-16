@@ -17,15 +17,11 @@
 
   <img alt="License" src="https://img.shields.io/github/license/theoneandonlyshadow/connect?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8" /> -->
-
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8" /> -->
-
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/techcorp?color=56BEB8" /> -->
 </p>
 
  <h4 align="center"> 
-	🚧  CONNECT is under construction and some features may not work   🚧
+	DEPRECATED
 
 </h4> 
 
